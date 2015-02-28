@@ -1,0 +1,17 @@
+2be3ebe66ae4399943961a51dbf870c8 *DESCRIPTION
+626d3814921f7309cd4510ce72b1d70c *NAMESPACE
+33bf9f29687170459094cc94fc46a102 *R/CEoptim.R
+1e8b76b80de5f24497b7fdaecd0710c3 *R/dirichletrnd.R
+f2bc059dcb038df17ee5a53124525a45 *R/print.CEoptim.R
+36928605a1c40e892f7ba07f9d297245 *R/rtmvnorm.R
+d4d5716b4a72b3f48bfd18556a466a0b *data/FitzHugh.RData
+5e730d2d192b4dca37aca918551bef17 *data/lesmis.RData
+a80d7883b52df423724b5015676eb02d *data/yt.RData
+9c74b72fbbc5e2c380f7a4ee19cb2e99 *man/CEoptim-package.Rd
+039f684aa9c3aa2654a1a3c97b353cc8 *man/CEoptim.Rd
+f9df6df8ecb3d50601ac074c6cbac891 *man/FitzHugh.Rd
+9a44ea268b4cd41fdaab67080f29cf69 *man/dirichletrnd.Rd
+03eaeeba8d9b61ffb386c42d95a8f7c3 *man/lesmis.Rd
+cf6c8843cd56c91934e9d97550c67ca8 *man/print.CEoptim.Rd
+9f4fcdac5970608056f175d9da8d55d9 *man/rtmvnorm.Rd
+ef6b0e2a12934454e41165f6f9a79003 *man/yt.Rd
