@@ -204,8 +204,8 @@ CEoptim <- function(f, f.arg=NULL, maximize=FALSE, continuous=NULL, discrete=NUL
 
 
     iter <- 0
-    ctsOpt <- NULL
-    disOpt <- NULL
+    ctsOpt <- Xc[elite[1],]
+    disOpt <- Xd[elite[1],]
     optimum <- Y[elite[1]]
     gammat <-Y[elite[nElite]]
     ceprocess <- NULL
@@ -216,31 +216,61 @@ CEoptim <- function(f, f.arg=NULL, maximize=FALSE, continuous=NULL, discrete=NUL
     while (iter < iterThr && diffopt!=0 &&
            (( p>0 && max(sigma) > eps) ||
             (q>0 && max(1.0-sapply(tau,max)) > eta))) {
-        if (verbose) {
-            CEt<- NULL
-            
-            cat('iter:',iter,
-                ' opt:',optimum*s)
-            CEt<- c(iter,optimum*s,gammat*s)
-            if(p>0){
-                cat(' maxSd:',max(sigma))
-                CEt<- c(CEt,mu,max(sigma))}
-            
-            if(q>0){
-                cat(' maxProbs:', max(1.0-sapply(tau,max)))
-                CEt<- c(CEt,max(1.0-sapply(tau,max)))
-                
-                namet<-paste("probs",iter,sep="")
-                assign(namet,tau)
-               probst[[iter+1]]<-get(namet)
-               
-            }
-                     
-            CEstates<- rbind(CEstates,CEt)
-            cat('\n')
-
+     
+      
+      
+      CEt<- NULL
+      CEt<- c(iter,optimum*s,gammat*s)
+      if(p>0){
+        CEt<- c(CEt,mu,max(sigma))}
+      if(q>0){
+        CEt<- c(CEt,max(1.0-sapply(tau,max)))       
+        namet<-paste("probs",iter,sep="")
+        assign(namet,tau)
+        probst[[iter+1]]<-get(namet)}
+      
+      CEstates<- rbind(CEstates,CEt)
+      
+      if (verbose) {  
+        cat('iter:',iter,
+            ' opt:',optimum*s)
+       
+        if(p>0){
+          cat(' maxSd:',max(sigma))}
+        
+        if(q>0){
+          cat(' maxProbs:', max(1.0-sapply(tau,max)))          
         }
-         
+        cat('\n')
+        
+      }
+      
+      
+#       if (verbose) {
+#             CEt<- NULL
+#             
+#             cat('iter:',iter,
+#                 ' opt:',optimum*s)
+#             CEt<- c(iter,optimum*s,gammat*s)
+#             if(p>0){
+#                 cat(' maxSd:',max(sigma))
+#                 CEt<- c(CEt,mu,max(sigma))}
+#             
+#             if(q>0){
+#                 cat(' maxProbs:', max(1.0-sapply(tau,max)))
+#                 CEt<- c(CEt,max(1.0-sapply(tau,max)))
+#                 
+#                 namet<-paste("probs",iter,sep="")
+#                 assign(namet,tau)
+#                probst[[iter+1]]<-get(namet)
+#                
+#             }
+#                      
+#             CEstates<- rbind(CEstates,CEt)
+#             cat('\n')
+# 
+#         }
+#          
        
         ## Generate sample and evaluate objective function
 
@@ -309,7 +339,7 @@ CEoptim <- function(f, f.arg=NULL, maximize=FALSE, continuous=NULL, discrete=NUL
         iter <- iter+1
     }
       
-    
+     
 
      if(iter==iterThr)
        convergence="Not converged" 
@@ -328,7 +358,7 @@ CEoptim <- function(f, f.arg=NULL, maximize=FALSE, continuous=NULL, discrete=NUL
     }
 
    out<-list(optimizer=list(continuous=ctsOpt,discrete=disOpt),
-          optimum=s*optimum,termination=list(niter=iter, convergence=convergence),
+          optimum=s*optimum,termination=list(niter=iter, nfe=iter*N, convergence=convergence),
           states=CEstates,states.probs=probst)
    class(out)<- "CEoptim"
    out

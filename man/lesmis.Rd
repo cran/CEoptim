@@ -19,3 +19,9 @@ Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015) \bold{CEoptim}:
 Cross-Entropy \R package for optimization, \emph{Journal of Statistical
   Software}, submitted.
 }
+
+\examples{
+## Display the social network graph
+data(lesmis)
+gplot(lesmis,gmode="graph")
+}

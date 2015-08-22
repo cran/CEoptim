@@ -33,3 +33,10 @@ Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015) \bold{CEoptim}:
 Cross-Entropy \R package for Optimization, \emph{Journal of Statistical
   Software}, submitted.
 }
+
+\examples{
+## Plot the data
+data(FitzHugh)
+plot(FitzHugh,col="blue")
+}
+

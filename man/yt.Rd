@@ -16,3 +16,9 @@ Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015) \bold{CEoptim}:
 Cross-Entropy \R package for optimization. \emph{Journal of Statistical
   Software}, submitted.
 }
+
+\examples{
+## Plot the yt data
+data(yt)
+plot(yt,type="l",col="blue")
+}

@@ -133,6 +133,11 @@ mu0 <- c(-3,-3); sigma0 <- c(10,10)
  
 res <- CEoptim(fun,continuous=list(mean=mu0, sd=sigma0), maximize=TRUE)
 
-print(res$optimum); print(res$optimizer)
+## To extract the Optimal value of fun
+res$optimum
+## To extract the location of the optimal value
+res$optimizer$continuous
+## print function gives the following default values
+print(res)
 }
 
