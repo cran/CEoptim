@@ -29,9 +29,9 @@ Parameter estimation for differential equations: A generalized smoothing
 approach, \emph{Journal of the Royal Statistical Society, Series B}
 \bold{69} (5) 741--796.
 
-Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015) \bold{CEoptim}:
-Cross-Entropy \R package for Optimization, \emph{Journal of Statistical
-  Software}, submitted.
+Benham T.,  Duan Q., Kroese D.P., Liquet B. (2017) \bold{CEoptim}:
+Cross-Entropy \R package for optimization. \emph{Journal of Statistical
+  Software}, 76(8), 1-29.
 }
 
 \examples{

@@ -25,9 +25,9 @@ To get the \code{states} and \code{states.probs} outputs, one should specify the
 
 \author{Tim Benham, Qibin Duan, Dirk P. Kroese, Benoit Liquet}
 
-\references{Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015)
-  \bold{CEoptim}: Cross-Entropy \R package for optimization. \emph{Journal of
-  Statistical Software}, submitted.}
+\references{Benham T.,  Duan Q., Kroese D.P., Liquet B. (2017) \bold{CEoptim}:
+Cross-Entropy \R package for optimization. \emph{Journal of Statistical
+  Software}, 76(8), 1-29.}
 
 \seealso{\code{\link{CEoptim}}}
 

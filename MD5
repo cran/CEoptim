@@ -1,4 +1,4 @@
-63c93954ad84937e54e19c2ba38172bd *DESCRIPTION
+5240d030b4b5c20f0c6920f54e3a8637 *DESCRIPTION
 4549d7e1f6dd81c3e66e6a1fea18086a *NAMESPACE
 28caf3ad5cc60390930de5c88267a2bc *R/CEoptim.R
 1e8b76b80de5f24497b7fdaecd0710c3 *R/dirichletrnd.R
@@ -7,11 +7,12 @@
 d4d5716b4a72b3f48bfd18556a466a0b *data/FitzHugh.RData
 5e730d2d192b4dca37aca918551bef17 *data/lesmis.RData
 a80d7883b52df423724b5015676eb02d *data/yt.RData
-9c74b72fbbc5e2c380f7a4ee19cb2e99 *man/CEoptim-package.Rd
-6a6343120d5cce730d3f3f86107150e0 *man/CEoptim.Rd
-5f6b8be7e0ab023ad3dd8cf4e9e27335 *man/FitzHugh.Rd
+c78162934e053a114b49541131a60b2e *inst/CITATION
+e206235791151f55ed35d2b7c2edc3fa *man/CEoptim-package.Rd
+26a6e2554fd817955b45d1dd8f21988e *man/CEoptim.Rd
+9b767c0e799e321f9bd93ef0faa3ab7b *man/FitzHugh.Rd
 783d34f747c84704b650ca764c23f916 *man/dirichletrnd.Rd
-97e96b4399499fd302cf89bbe3f9a319 *man/lesmis.Rd
-892f077ee12fc673611ecfd6027c04a5 *man/print.CEoptim.Rd
+9aa8adf65ea4ad03c1e46c24b50bf5e1 *man/lesmis.Rd
+b84abdbc7eb087212cd665f0259b950a *man/print.CEoptim.Rd
 9f4fcdac5970608056f175d9da8d55d9 *man/rtmvnorm.Rd
-b512632d728cd954f16cb390eece6eb3 *man/yt.Rd
+66c16b607e655db005ba9c8bbd914a8b *man/yt.Rd

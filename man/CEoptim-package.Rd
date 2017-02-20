@@ -23,9 +23,9 @@ LazyLoad: \tab yes\cr
 }
 \author{Tim Benham, Qibin Duan, Dirk P. Kroese, Benoit Liquet <b.liquet@uq.edu.au>}
 \references{
-  Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015) \bold{CEoptim}:
+  Benham T.,  Duan Q., Kroese D.P., Liquet B. (2017) \bold{CEoptim}:
 Cross-Entropy \R package for optimization. \emph{Journal of Statistical
-  Software}, submitted.
+  Software}, 76(8), 1-29.
 }
 \keyword{ package }
 \seealso{

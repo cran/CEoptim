@@ -110,9 +110,9 @@ at each iteration. Will only be returned for discrete and mixed cases.
 
 \author{Tim Benham, Qibin Duan, Dirk P. Kroese, Benoit Liquet}
 
-\references{Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015)
-  \bold{CEoptim}: Cross-Entropy \R package for optimization. \emph{Journal of
-  Statistical Software}, submitted.
+\references{ Benham T.,  Duan Q., Kroese D.P., Liquet B. (2017) \bold{CEoptim}:
+Cross-Entropy \R package for optimization. \emph{Journal of Statistical
+  Software}, 76(8), 1-29.
 
 Rubinstein R.Y. and Kroese D.P. (2004). \emph{The Cross-Entropy
 Method}. Springer, New York.

@@ -15,9 +15,9 @@
 \references{Knuth, D.E. (1993) \emph{The Stanford GraphBase: A Platform for
 	Combinatorial Computing}, ACM Press: Reading MA
 
-Benham T.,  Duan Q., Kroese D.P., Liquet B. (2015) \bold{CEoptim}:
-Cross-Entropy \R package for optimization, \emph{Journal of Statistical
-  Software}, submitted.
+Benham T.,  Duan Q., Kroese D.P., Liquet B. (2017) \bold{CEoptim}:
+Cross-Entropy \R package for optimization. \emph{Journal of Statistical
+  Software}, 76(8), 1-29.
 }
 
 \examples{
