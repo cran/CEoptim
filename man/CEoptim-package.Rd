@@ -11,16 +11,7 @@ Cross-Entropy R package for optimization
 	and mixed variables. In addition,    
 	\code{CEoptim} implements linear constraints for continuous optimization.  
 }
-\details{
-\tabular{ll}{
-Package: \tab CEoptim\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2015-02-28\cr
-License: \tab GPL (>=2.0)\cr
-LazyLoad: \tab yes\cr
-}
-}
+
 \author{Tim Benham, Qibin Duan, Dirk P. Kroese, Benoit Liquet <b.liquet@uq.edu.au>}
 \references{
   Benham T.,  Duan Q., Kroese D.P., Liquet B. (2017) \bold{CEoptim}:

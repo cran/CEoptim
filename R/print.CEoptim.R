@@ -1,8 +1,9 @@
 print.CEoptim<-function(x,...){
-  
-  if(class(x)!="CEoptim")
+  if (!inherits(x, "CEoptim"))
     stop("The object x is not the result from CEoptim function")
   
+  #if(class(x)!="CEoptim") ## I changed due to issue for submission in CRAN
+    
   args <- list(...)
   OutPut<- list(optimizer=TRUE, optimum=TRUE, termination=TRUE, states=FALSE,states.probs=FALSE)  
   
